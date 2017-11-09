@@ -52,9 +52,45 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\assets-outdoor\MedievalTownExteriors\Scripts\ProtectCameraFromWallClip.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyAudioUtility\EasyAudioUtility.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyAudioUtility\EasyAudioUtility_Helper.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EasyInputUtility.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_AxisBase.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_AxisButton.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_ControlsMenu.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_DebugItem.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_DebugWindow.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\EasyInputUtility\Scripts\EIU_RebindButton.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\LoadGame Scripts\LoadSlotIdentifier.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\PauseMenu\PauseMenuOptions.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\PauseMenu\UIController.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\SaveGame Scripts\LoadGameManager.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveGameTrigger.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveGameUI.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveSlotIdentifier.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Loading Screen Scripts\Fader.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Loading Screen Scripts\LoadingScreen.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\LevelSelectItem.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\LevelSelectManager.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\MainMenuController.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\OptionsController_Game.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\OptionsController_Graphics.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\SimpleCube\SimpleCube.cs" />
+     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\assets-indoor\Medieval_House\Info.txt" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\assets-outdoor\MedievalTownExteriors\Readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\assets-outdoor\Wand and Circles\Polygon City Free Pack - Environment and Interior\Materials\Double Sided Standard Diffuse Bump.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Volumes/Kucik/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
