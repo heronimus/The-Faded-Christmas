@@ -76,6 +76,8 @@
      <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\OptionsController_Game.cs" />
      <Compile Include="Assets\MainMenu\Scripts\Main Menu Scripts\OptionsController_Graphics.cs" />
      <Compile Include="Assets\MainMenu\Scripts\SimpleCube\SimpleCube.cs" />
+     <Compile Include="Assets\Script\HUD.cs" />
+     <Compile Include="Assets\Script\MainPlayer.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\assets-indoor\Medieval_House\Info.txt" />
