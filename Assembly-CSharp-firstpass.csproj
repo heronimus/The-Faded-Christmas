@@ -68,6 +68,7 @@
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\assets-outdoor\Wand and Circles\Polygon City Free Pack - Environment and Interior\Materials\Double Sided Standard Diffuse Bump.shader" />
+     <None Include="Assets\assets-indoor\Minimalist Christmas\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\Plugins\GitHub\Editor\EULA.txt" />
  <Reference Include="UnityEngine.UIAutomation">
