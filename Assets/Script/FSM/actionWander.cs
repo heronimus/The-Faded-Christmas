@@ -10,17 +10,18 @@ public class actionWander : FSMAction {
 	private GameObject players;
 
 	private string finishEvent;
+	private float timer;
 
 	public actionWander (FSMState owner) : base (owner)
 	{
 	}
 
-	public void Init (string finishEvent)
+	public void Init (GameObject monsters, GameObject players, Animation monsterAnim, MonsterWandering monsterWander, string finishEvent)
 	{
-		monsters = GameObject.FindGameObjectWithTag ("Monsters");
-		players = GameObject.FindGameObjectWithTag ("Players");
-		monsterAnim = GameObject.FindGameObjectWithTag("MonstersAnim").GetComponent<Animation> ();
-		monsterWander = monsters.GetComponent<MonsterWandering> ();
+		this.monsters = monsters;
+		this.players = players;
+		this.monsterAnim = monsterAnim;
+		this.monsterWander = monsterWander;
 
 		this.finishEvent = finishEvent;
 	}
@@ -34,7 +35,21 @@ public class actionWander : FSMAction {
 
 	public override void OnUpdate ()
 	{
+		if (Vector3.Distance (monsters.transform.position, players.transform.position) <= 25) {
+			finishEvent = "ToChase";
+			Finish ();
+			return;
+		}
 
+		timer += Time.deltaTime;
+		if (timer >= 30f) {
+			timer = 0;
+			finishEvent = "ToBack";
+			Finish ();
+			return;
+		}
+
+		Debug.Log ("Timer w : " + timer);
 		Debug.Log (Vector3.Distance (monsters.transform.position, players.transform.position));
 	}
 

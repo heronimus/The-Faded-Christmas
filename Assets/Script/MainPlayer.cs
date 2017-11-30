@@ -11,7 +11,7 @@ public class MainPlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Player Start");
-		hudObject = GameObject.FindGameObjectWithTag ("HUD").GetComponent<HUD> ();
+		//hudObject = GameObject.FindGameObjectWithTag ("HUD").GetComponent<HUD> ();
 		itemsInTouch = false;
 	}
 	
