@@ -51,10 +51,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyAudioUtility\Scripts\EasyAudioUtility.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyAudioUtility\Scripts\EasyAudioUtility_Helper.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyAudioUtility\Scripts\EasyAudioUtility_SceneManager.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EasyInputUtility.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_AxisBase.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_AxisButton.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_ControlsMenu.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_DebugItem.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_DebugWindow.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\EasyInputUtility\Scripts\EIU_RebindButton.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\LoadGame Scripts\LoadSlotIdentifier.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\PauseMenu\PauseMenuOptions.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\PauseMenu\UIController.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\SaveGame Scripts\LoadGameManager.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveGameTrigger.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveGameUI.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\inGame Scripts\SaveGame Scripts\SaveSlotIdentifier.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Loading Screen Scripts\Fader.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Loading Screen Scripts\LoadingScreen.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\LevelSelectItem.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\LevelSelectManager.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\MainMenuController.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\OptionsController_Game.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\OptionsController_Graphics.cs" />
+     <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\SimpleCube\SimpleCube.cs" />
+     <Compile Include="Assets\assets-indoor\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\assets-outdoor\golem\Scripts\buttons.cs" />
      <Compile Include="Assets\assets-outdoor\MedievalTownExteriors\Scripts\ProtectCameraFromWallClip.cs" />
-     <Compile Include="Assets\Script\FSMSystem.cs" />
+     <Compile Include="Assets\Script\FSM\actionBack.cs" />
+     <Compile Include="Assets\Script\FSM\actionChase.cs" />
+     <Compile Include="Assets\Script\FSM\actionIdle.cs" />
+     <Compile Include="Assets\Script\FSM\actionSleep.cs" />
+     <Compile Include="Assets\Script\FSM\actionWander.cs" />
+     <Compile Include="Assets\Script\FSM\FSM.cs" />
+     <Compile Include="Assets\Script\FSM\FSMAction.cs" />
+     <Compile Include="Assets\Script\FSM\FSMState.cs" />
      <Compile Include="Assets\Script\HUD.cs" />
+     <Compile Include="Assets\Script\LockQuest.cs" />
      <Compile Include="Assets\Script\MainPlayer.cs" />
      <Compile Include="Assets\Script\MonsterMain.cs" />
      <Compile Include="Assets\Script\MonsterWandering.cs" />
@@ -67,7 +101,9 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\assets-outdoor\MedievalTownExteriors\Readme.txt" />
+     <None Include="Assets\assets-indoor\Key\readME keys.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\assets-indoor\TV\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />

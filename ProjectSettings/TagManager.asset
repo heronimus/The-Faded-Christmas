@@ -9,6 +9,9 @@ TagManager:
   - Players
   - Monsters
   - Boundary
+  - infoLarge
+  - InfoSmall
+  - BoxItems
   layers:
   - Default
   - TransparentFX
