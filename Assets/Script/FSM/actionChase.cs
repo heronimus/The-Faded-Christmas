@@ -56,7 +56,7 @@ public class actionChase : FSMAction {
 			monsters.transform.LookAt (players.transform);
 		}
 
-		Debug.Log ("Dist :"+Vector3.Distance (monsters.transform.position, players.transform.position));
+//		Debug.Log ("Dist :"+Vector3.Distance (monsters.transform.position, players.transform.position));
 	}
 
 	public override void OnExit ()
@@ -71,12 +71,5 @@ public class actionChase : FSMAction {
 			GetOwner ().SendEvent (finishEvent);
 		}
 	}
-
-	private IEnumerator Countdown(int time){
-		while(time>0){
-			Debug.Log(time--);
-			yield return new WaitForSeconds(1);
-		}
-		Debug.Log("Countdown Complete!");
-	}
+		
 }

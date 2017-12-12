@@ -42,7 +42,7 @@ public class actionBack : FSMAction {
 		}
 		monsters.transform.position = Vector3.MoveTowards (monsters.transform.position, startPosition, .03f);
 		monsters.transform.LookAt (startPosition);
-		Debug.Log ("Dist b:"+Vector3.Distance (monsters.transform.position, startPosition));
+//		Debug.Log ("Dist b:"+Vector3.Distance (monsters.transform.position, startPosition));
 	}
 
 	public override void OnExit ()

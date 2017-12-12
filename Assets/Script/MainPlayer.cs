@@ -67,18 +67,17 @@ public class MainPlayer : MonoBehaviour {
 		if (Input.GetKeyDown("space"))
 			hudObject.hideInfo();
 		
-		if (Input.GetKeyDown ("h")) {
-			hudObject.addItemList ("Door Key X");
-			hudObject.addItemList ("Door Key Y");
-			hudObject.cheat ();
-		}
+//		if (Input.GetKeyDown ("h")) {
+//			hudObject.addItemList ("Door Key X");
+//			hudObject.addItemList ("Door Key Y");
+//			hudObject.cheat ();
+//		}
 		if (Input.GetKeyDown ("j")) {
-			hudObject.showInfoLarge ("You Save The Christmas!");
 			hudObject.cheat2 ();
 		}
-		if (Input.GetKeyDown ("k")) {
-			SceneManager.LoadScene("MainMenu");
-		}
+//		if (Input.GetKeyDown ("k")) {
+//			SceneManager.LoadScene("MainMenu");
+//		}
 
 
 

@@ -49,8 +49,8 @@ public class actionWander : FSMAction {
 			return;
 		}
 
-		Debug.Log ("Timer w : " + timer);
-		Debug.Log (Vector3.Distance (monsters.transform.position, players.transform.position));
+//		Debug.Log ("Timer w : " + timer);
+//		Debug.Log (Vector3.Distance (monsters.transform.position, players.transform.position));
 	}
 
 	public override void OnExit ()

@@ -51,7 +51,7 @@ public class actionIdle : FSMAction {
 			Finish ();
 			return;
 		}
-		Debug.Log ("Dist :"+Vector3.Distance (monsters.transform.position, players.transform.position));
+//		Debug.Log ("Dist :"+Vector3.Distance (monsters.transform.position, players.transform.position));
 	}
 
 	public override void OnExit ()

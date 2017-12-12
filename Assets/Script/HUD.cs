@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -24,8 +25,10 @@ public class HUD : MonoBehaviour {
 
 	public void spiritMinus(){
 		playerSpiritSlider.value--;
-		if (playerSpiritSlider.value <= 0)
+		if (playerSpiritSlider.value <= 0) {
 			showInfoSmall ("Game Over :(");
+			StartCoroutine(WaitDie());
+		}
 	}
 
 	public void spiritPlus(){
@@ -35,8 +38,11 @@ public class HUD : MonoBehaviour {
 	public void healthMinus(){
 		GameObject.Find ("heart" + playerHealth).SetActive (false);
 		playerHealth--;
-		if (playerHealth <= 0)
+		if (playerHealth <= 0) {
 			showInfoSmall ("Game Over :(");
+			StartCoroutine(WaitDie());
+
+		}
 	}
 
 	public void addItemList(string itemname){
@@ -68,11 +74,14 @@ public class HUD : MonoBehaviour {
 	public void showInfoLarge(string textinfo){
 		infoLarge.SetActive (true);
 		infoLargeText.text = textinfo;
+		StartCoroutine(WaitHide());
 	}
 
 	public void showInfoSmall(string textinfo){
 		infoSmall.SetActive (true);
 		infoSmallText.text = textinfo;
+		StartCoroutine(WaitHide());
+
 	}
 
 	public void hideInfo(){
@@ -107,5 +116,18 @@ public class HUD : MonoBehaviour {
 
 	}
 
-
+	IEnumerator WaitDie()
+	{
+		print(Time.time);
+		yield return new WaitForSeconds(3);
+		print(Time.time);
+		SceneManager.LoadScene("MainMenu");
+	}
+	IEnumerator WaitHide()
+	{
+		print(Time.time);
+		yield return new WaitForSeconds(3);
+		print(Time.time);
+		hideInfo ();
+	}
 }

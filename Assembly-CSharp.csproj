@@ -77,7 +77,6 @@
      <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\Main Menu Scripts\OptionsController_Graphics.cs" />
      <Compile Include="Assets\assets-hud\EasyMainMenu\Scripts\SimpleCube\SimpleCube.cs" />
      <Compile Include="Assets\assets-indoor\Clock\Scripts\Clock.cs" />
-     <Compile Include="Assets\assets-outdoor\golem\Scripts\buttons.cs" />
      <Compile Include="Assets\assets-outdoor\MedievalTownExteriors\Scripts\ProtectCameraFromWallClip.cs" />
      <Compile Include="Assets\Script\FSM\actionBack.cs" />
      <Compile Include="Assets\Script\FSM\actionChase.cs" />

@@ -41,9 +41,19 @@ public class LockQuest : MonoBehaviour {
 					GameObject.Find("Door_outside").GetComponent<Animation>().Play();
 					hudObject.deleteItem ("Door Key Y");
 					itemsInTouch = true;
-					SceneManager.LoadScene("OutdoorScene");
+					StartCoroutine (Level1Complete ());
 				} else {
 					hudObject.showInfoSmall("Door Locked, Outside is Freezing ! ");
+				}
+
+			}
+
+			if (questName == "CarEscape"){
+				if ( hudObject.getBoxComplete()) {
+					itemsInTouch = true;
+					StartCoroutine (Level2Complete ());
+				} else {
+					hudObject.showInfoSmall("Strange, I can't get in ...");
 				}
 
 			}
@@ -54,5 +64,19 @@ public class LockQuest : MonoBehaviour {
 		if (collision.gameObject.tag.Equals ("Players")) {
 			Debug.Log ("Quest Uncheck");
 		}
+	}
+
+	IEnumerator Level1Complete()
+	{
+		hudObject.showInfoLarge ("LEVEL COMPLETE");
+		yield return new WaitForSeconds(4);
+		SceneManager.LoadScene("OutdoorScene");
+	}
+
+	IEnumerator Level2Complete()
+	{
+		hudObject.showInfoLarge ("Congratulation !! LEVEL COMPLETE");
+		yield return new WaitForSeconds(4);
+		SceneManager.LoadScene("MainMenu");
 	}
 }

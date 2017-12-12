@@ -180,23 +180,23 @@ public class OptionsController_Game : MonoBehaviour {
     /// </summary>
     void game_setMusic()
     {
+		if(FindObjectOfType<EasyAudioUtility>()){
+			//finding correct Audio Source
+			EasyAudioUtility am = FindObjectOfType<EasyAudioUtility>();
+			for (int i = 0; i < am.helper.Length; i++)
+			{
+				if (am.helper[i].name == "BG")
+				{
+					musicSource = am.helper[i].source;
 
-        //finding correct Audio Source
-        EasyAudioUtility am = FindObjectOfType<EasyAudioUtility>();
-        for (int i = 0; i < am.helper.Length; i++)
-        {
-            if (am.helper[i].name == "BG")
-            {
-                musicSource = am.helper[i].source;
+					if (!musicSource.isPlaying)
+						musicSource.Play();
+				}
+			}
 
-                if (!musicSource.isPlaying)
-                    musicSource.Play();
-            }
-        }
-
-        musicSource.volume = musicValue;
-        music_slider.value = musicValue;
-
+			musicSource.volume = musicValue;
+			music_slider.value = musicValue;	
+		}
 
     }
 
@@ -224,24 +224,26 @@ public class OptionsController_Game : MonoBehaviour {
     {
 
         //finding Audio source once
-        EasyAudioUtility am = FindObjectOfType<EasyAudioUtility>();
-        for(int i = 0; i < am.helper.Length; i++)
-        {
-            //define all the sounds present in the Easy Audio Utility
-            if (am.helper[i].name == "Hover")
-                soundSource[i] = am.helper[i];
+		if (FindObjectOfType<EasyAudioUtility> ()) {
+			EasyAudioUtility am = FindObjectOfType<EasyAudioUtility>();
+			for(int i = 0; i < am.helper.Length; i++)
+			{
+				//define all the sounds present in the Easy Audio Utility
+				if (am.helper[i].name == "Hover")
+					soundSource[i] = am.helper[i];
 
-            if (am.helper[i].name == "Click")
-                soundSource[i] = am.helper[i];
+				if (am.helper[i].name == "Click")
+					soundSource[i] = am.helper[i];
 
-        }
+			}
 
-        foreach (EasyAudioUtility_Helper s in soundSource)
-        {
+			foreach (EasyAudioUtility_Helper s in soundSource)
+			{
 
-            s.volume = soundValue;
-            sound_slider.value = soundValue;
-        }
+				s.volume = soundValue;
+				sound_slider.value = soundValue;
+			}
+		}
 
     }
 

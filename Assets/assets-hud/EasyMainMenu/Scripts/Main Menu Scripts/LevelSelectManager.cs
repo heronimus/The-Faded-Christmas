@@ -41,7 +41,8 @@ public class LevelSelectManager : MonoBehaviour {
         GetComponent<Animator>().Play("LevelSelect_on");
 
         //play sfx
-        EasyAudioUtility.instance.Play("Click");
+		if(EasyAudioUtility.instance!=null)
+        	EasyAudioUtility.instance.Play("Click");
     }
 
     public void closeLevelSelect()
